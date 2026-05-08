@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD VOLLEYBALL POWERS | 世界の強豪国ガイド</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #0f172a;
+            color: #f8f9fa;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.9)), 
+                        url('https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .accent-red { color: #e60012; }
+        .bg-accent-red { background-color: #e60012; }
+
+        .nation-card {
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nation-card:hover {
+            transform: translateY(-10px);
+            border-color: #e60012;
+            background: rgba(230, 0, 18, 0.05);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #e60012;
+            margin: 12px auto;
+        }
+
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+
+    <!-- Header -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter accent-red italic">
+                WORLD VOLLEYBALL
+            </div>
+            <div class="hidden md:flex space-x-10 font-bold text-xs tracking-widest">
+                <a href="#home" class="hover:text-accent-red transition">TOP</a>
+                <a href="#powers" class="hover:text-accent-red transition">POWERHOUSES</a>
+                <a href="#rankings" class="hover:text-accent-red transition">RANKINGS</a>
+                <a href="#rules" class="hover:text-accent-red transition">RULES</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-[10px] border border-white/30 px-2 py-1 rounded uppercase">FIVB Focus</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero-section h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-5xl">
+            <p class="accent-red font-black tracking-[0.4em] mb-4 text-sm">GLOBAL ELITE TEAMS</p>
+            <h1 class="text-6xl md:text-9xl font-black mb-8 italic leading-none tracking-tighter">
+                THE REAL <br>STRONGEST.
+            </h1>
+            <p class="text-lg md:text-2xl mb-12 opacity-80 max-w-2xl mx-auto font-light leading-relaxed">
+                高さ、パワー、そして精密さ。バレーボール界の頂点に君臨する「真の強豪国」たちの真髄に迫る。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#powers" class="bg-accent-red hover:bg-red-700 text-white px-12 py-5 rounded-sm font-black text-sm tracking-widest transition-all">世界の強豪を見る</a>
+                <a href="#rankings" class="border border-white/30 hover:bg-white hover:text-black px-12 py-5 rounded-sm font-black text-sm tracking-widest transition-all">ランキング詳細</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powerhouses Section -->
+    <section id="powers" class="py-28 bg-[#0a0f1d]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-black section-title italic uppercase tracking-tighter">Top Powerhouses</h2>
+                <p class="text-gray-400 mt-6 tracking-widest text-sm">現代バレーボールを支配する世界最強の国々</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Poland -->
+                <div class="nation-card bg-white/5 p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute -top-10 -right-10 text-8xl font-black opacity-5 italic group-hover:text-accent-red transition-colors">01</div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-8 bg-white border border-gray-300"></div> <!-- Placeholder for Poland Flag -->
+                        <h3 class="text-3xl font-black italic">POLAND</h3>
+                    </div>
+                    <p class="text-accent-red font-bold text-xs mb-4 uppercase tracking-widest">世界ランク1位 (常連)</p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        「バレーボール大国」として知られ、全ポジションに世界トップクラスの選手を揃える。圧倒的な選手層の厚さと、勝負所での集中力は他の追随を許さない。
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fas fa-check accent-red mr-2"></i> 超攻撃的なジャンプサーブ</li>
+                        <li><i class="fas fa-check accent-red mr-2"></i> 2メートル級が並ぶ高い壁</li>
+                    </ul>
+                </div>
+
+                <!-- France -->
+                <div class="nation-card bg-white/5 p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute -top-10 -right-10 text-8xl font-black opacity-5 italic group-hover:text-accent-red transition-colors">02</div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-8 bg-blue-600"></div> <!-- Placeholder for France Flag -->
+                        <h3 class="text-3xl font-black italic">FRANCE</h3>
+                    </div>
+                    <p class="text-accent-red font-bold text-xs mb-4 uppercase tracking-widest">オリンピック連覇</p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        驚異的な守備力と、トリッキーなコンビネーションが持ち味。バレーを「楽しむ」ようなクリエイティブなプレーで、相手を翻弄する。
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fas fa-check accent-red mr-2"></i> 落ちない繋ぎ（ディグ）</li>
+                        <li><i class="fas fa-check accent-red mr-2"></i> 変幻自在のセットアップ</li>
+                    </ul>
+                </div>
+
+                <!-- Italy -->
+                <div class="nation-card bg-white/5 p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute -top-10 -right-10 text-8xl font-black opacity-5 italic group-hover:text-accent-red transition-colors">03</div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-8 bg-green-600"></div> <!-- Placeholder for Italy Flag -->
+                        <h3 class="text-3xl font-black italic">ITALY</h3>
+                    </div>
+                    <p class="text-accent-red font-bold text-xs mb-4 uppercase tracking-widest">世界選手権覇者</p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        若き才能が次々と台頭する新星。緻密なデータ分析に基づいた戦略と、セリエAという世界最高峰の環境で鍛えられた個の力が融合。
+                    </p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fas fa-check accent-red mr-2"></i> 高精度のシステムバレー</li>
+                        <li><i class="fas fa-check accent-red mr-2"></i> 世界最高のセッター陣</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranking Insight -->
+    <section id="rankings" class="py-28 bg-white text-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-5xl font-black mb-8 italic uppercase tracking-tighter">Ranking System</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        現在のFIVB世界ランキングは「各試合の勝利期待値」に基づき計算されます。
+                        強い相手に勝てば大幅にポイントが増え、格下に負ければ大きくポイントを失う非常にシビアなシステムです。
+                    </p>
+                    <div class="bg-gray-100 p-8 rounded-lg border-l-8 border-accent-red">
+                        <h4 class="font-black text-xl mb-4">なぜポーランドは強いのか？</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            彼らの強さは「継続性」にあります。どの大会でも安定してベスト4以上に食い込む実力があり、怪我人が出ても代わりの選手が同レベルの活躍をするという、選手層の厚さが最大の武器です。
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded">
+                            <span class="font-black italic w-12">#01</span>
+                            <span class="font-bold flex-1 text-lg">POLAND</span>
+                            <span class="text-accent-red font-black">400+ pts</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded">
+                            <span class="font-black italic w-12 text-gray-400">#02</span>
+                            <span class="font-bold flex-1 text-lg">FRANCE</span>
+                            <span class="text-gray-500 font-bold">Rising</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded">
+                            <span class="font-black italic w-12 text-gray-400">#03</span>
+                            <span class="font-bold flex-1 text-lg">ITALY</span>
+                            <span class="text-gray-500 font-bold">Stable</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded">
+                            <span class="font-black italic w-12 text-gray-400">#04</span>
+                            <span class="font-bold flex-1 text-lg">USA / JAPAN</span>
+                            <span class="text-gray-500 font-bold text-sm italic">Top Tier</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-4 tracking-widest text-right">※ランキングは大会ごとに常に変動します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="py-28 bg-[#0a0f1d] text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black section-title italic uppercase">Basic Rules</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="space-y-4">
+                    <div class="text-accent-red text-5xl mb-6"><i class="fas fa-users"></i></div>
+                    <h4 class="text-xl font-bold">6人制バレー</h4>
+                    <p class="text-gray-500 text-sm">コートに立つのは6人。さらに守備専門の「リベロ」が後衛の選手と自由に入れ替わります。</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="text-accent-red text-5xl mb-6"><i class="fas fa-hand-paper"></i></div>
+                    <h4 class="text-xl font-bold">3回以内の接触</h4>
+                    <p class="text-gray-500 text-sm">相手のコートに返すまで、最大3回のタッチが許されます。ただし、同じ選手が2回連続で触れることはできません。</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="text-accent-red text-5xl mb-6"><i class="fas fa-trophy"></i></div>
+                    <h4 class="text-xl font-bold">5セットマッチ</h4>
+                    <p class="text-gray-400 text-sm italic">国際大会の基本。3セット先取で勝利が決定します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-20 border-t border-white/5">
+        <div class="container mx-auto px-6 flex flex-col items-center">
+            <div class="text-4xl font-black italic accent-red mb-10 tracking-tighter">WORLD VOLLEYBALL HUB</div>
+            <div class="flex gap-8 mb-12 text-2xl text-gray-600">
+                <a href="#" class="hover:text-accent-red transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-accent-red transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-accent-red transition"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="text-xs text-gray-700 tracking-widest text-center leading-loose">
+                © 2024 WORLD VOLLEYBALL FAN RESOURCE.<br>
+                EXCELLENCE IN EVERY SPIKE.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
